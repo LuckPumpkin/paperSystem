@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSDetailxsd" targetNamespace="http://tempuri.org/DSDetailxsd.xsd" xmlns:mstns="http://tempuri.org/DSDetailxsd.xsd" xmlns="http://tempuri.org/DSDetailxsd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="AppConnStr" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AppConnStr (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.AppConnStr.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DetailTableAdapter" GeneratorDataComponentClassName="DetailTableAdapter" Name="Detail" UserDataComponentName="DetailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   Registration.ID, Detail.DetailID
+FROM      Registration INNER JOIN
+                Detail ON Registration.courseID = Detail.courseID AND Registration.PaperID = Detail.PaperID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="DetailID" DataSetColumn="DetailID" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteAllDetail" Modifier="Public" Name="DeleteAllDetail" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteAllDetail">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM Detail;DBCC CHECKIDENT ('dbo.Detail', RESEED, 0)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteAllModule" Modifier="Public" Name="DeleteAllModule" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DeleteAllModule">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM Module; Truncate table Module; </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteAllQuestiontype" Modifier="Public" Name="DeleteAllQuestiontype" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DeleteAllQuestiontype">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM Questiontype;  Truncate table Questiontype;</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteDetailByCourseID" Modifier="Public" Name="DeleteDetailByCourseID" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="DeleteDetailByCourseID">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM Detail WHERE (courseID LIKE @courseID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="courseID" ColumnName="courseID" DataSourceName="PaperDB.dbo.Detail" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@courseID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="courseID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteModuleByDetailID" Modifier="Public" Name="DeleteModuleByDetailID" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="DeleteModuleByDetailID">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM Module
+WHERE   (DetailID LIKE @DetailID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DetailID" ColumnName="DetailID" DataSourceName="PaperDB.dbo.Module" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@DetailID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="DetailID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQbyDetailID" Modifier="Public" Name="DeleteQbyDetailID" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy9" UserSourceName="DeleteQbyDetailID">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM Questiontype
+WHERE   (DetailID LIKE @DetailID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DetailID" ColumnName="DetailID" DataSourceName="PaperDB.dbo.Questiontype" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@DetailID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="DetailID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="PaperDB.dbo.Detail" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDetailByCID" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDetailByCID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDetailByCID" UserSourceName="GetDetailByCID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT MainTable.DetailID, ISNULL(SubTable.Mnum, 0) AS Mnum, ISNULL(SubTable.Qnum, 0) AS Qnum FROM Detail AS MainTable LEFT OUTER JOIN (SELECT Detail.DetailID, COUNT(Module.ModuleID) AS Mnum, COUNT(Questiontype.QtypeID) AS Qnum FROM Module INNER JOIN Detail ON Module.DetailID = Detail.DetailID INNER JOIN Questiontype ON Detail.DetailID = Questiontype.DetailID WHERE (Detail.courseID = @courseID) GROUP BY Detail.DetailID) AS SubTable ON MainTable.DetailID = SubTable.DetailID WHERE (MainTable.courseID = @courseID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="courseID" ColumnName="courseID" DataSourceName="PaperDB.dbo.Detail" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@courseID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="courseID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="PaperDB.dbo.Detail" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="GetDetailID" Modifier="Public" Name="GetDetailID" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="GetDetailID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   Detail.DetailID
+FROM      Detail INNER JOIN
+                Paper ON Detail.PaperID = Paper.ID INNER JOIN
+                Registration ON Paper.ID = Registration.PaperID
+WHERE   (Registration.ID = @regID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="regID" ColumnName="ID" DataSourceName="PaperDB.dbo.Registration" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@regID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="GetModuleNumByDetID" Modifier="Public" Name="GetModuleNumByDetID" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="GetModuleNumByDetID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) AS num FROM Module WHERE (DetailID = @DetailID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DetailID" ColumnName="DetailID" DataSourceName="PaperDB.dbo.Module" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@DetailID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="DetailID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="GetQNumByDetID" Modifier="Public" Name="GetQNumByDetID" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="GetQNumByDetID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) AS num FROM Questiontype WHERE (DetailID = @DetailID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DetailID" ColumnName="DetailID" DataSourceName="PaperDB.dbo.Questiontype" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@DetailID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="DetailID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertDetail" Modifier="Public" Name="InsertDetail" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy8" UserSourceName="InsertDetail">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO Detail(courseID,PaperID) VALUES (@courseID,@PaperID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="courseID" ColumnName="courseID" DataSourceName="PaperDB.dbo.Detail" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@courseID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="courseID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="PaperID" ColumnName="PaperID" DataSourceName="PaperDB.dbo.Detail" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@PaperID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="PaperID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSDetailxsd" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DSDetailxsd" msprop:Generator_UserDSName="DSDetailxsd">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Detail" msprop:Generator_TableClassName="DetailDataTable" msprop:Generator_TableVarName="tableDetail" msprop:Generator_RowChangedName="DetailRowChanged" msprop:Generator_TablePropName="Detail" msprop:Generator_RowDeletingName="DetailRowDeleting" msprop:Generator_RowChangingName="DetailRowChanging" msprop:Generator_RowEvHandlerName="DetailRowChangeEventHandler" msprop:Generator_RowDeletedName="DetailRowDeleted" msprop:Generator_RowClassName="DetailRow" msprop:Generator_UserTableName="Detail" msprop:Generator_RowEvArgName="DetailRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="DetailID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnDetailID" msprop:Generator_ColumnPropNameInRow="DetailID" msprop:Generator_ColumnPropNameInTable="DetailIDColumn" msprop:Generator_UserColumnName="DetailID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

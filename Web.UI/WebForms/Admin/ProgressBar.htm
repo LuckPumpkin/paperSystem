@@ -1,0 +1,72 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="mainWindow">
+<head>
+    <title>无标题页</title>
+    <style type="text/css">
+        html {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            font-size: 12px;
+            font-family: 宋体, Arial, Helvetica, sans-serif;
+            padding: 5px 15px 15px 40px;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            color: Navy;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        hr {
+            border-style: dotted none none none;
+            border-color: Green;
+            border-width: 1px;
+            border-collapse: collapse;
+            height: 1px;
+            text-align: left;
+            margin: 10px 0px 15px 0px;
+        }
+
+        a, a:visited {
+            color: #07519A;
+            text-decoration: none;
+            text-align: left;
+        }
+
+            a:hover, a:focus, a:active {
+                color: #f37028;
+                text-decoration: underline;
+            }
+             
+    </style>
+    <script language="javascript">
+        function SetPorgressBar(pos) {
+            //设置进度条居中
+            ProgressBarSide.style.display = "";
+            //设置进度条百分比
+            ProgressBar.style.width = pos * 3 + "px";
+            ProgressText.innerHTML = pos + "%";
+        }
+        //完成后隐藏进度条
+        function SetCompleted() {
+            //ProgressBarSide.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <h2>导入数据</h2>
+    <div id="ProgressBarSide" style="height: 21px; width: 300px; color: Silver; border-width: 1px; border-style: Solid;">
+        <div id="ProgressBar" style="position: absolute; height: 21px; width: 0px; background-color: #E2F0FF"></div>
+        <div id="ProgressText" style="position: absolute; padding:3px; height: 21px; width: 300px; text-align: center; vertical-align: middle; color: #8BB6EF;"></div>
+    </div>

@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSWeek" targetNamespace="http://tempuri.org/DSWeek.xsd" xmlns:mstns="http://tempuri.org/DSWeek.xsd" xmlns="http://tempuri.org/DSWeek.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="AppConnStr" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AppConnStr (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.AppConnStr.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="CheckConnStr" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CheckConnStr (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.CheckConnStr.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProcessTableAdapter" GeneratorDataComponentClassName="ProcessTableAdapter" Name="Process" UserDataComponentName="ProcessTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="ExamCheck.dbo.Process" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ID, dept, class, [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20], [21], [22], [23], [24], remark, tagRemark, ExamWeek FROM Process</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="class" DataSetColumn="class" />
+              <Mapping SourceColumn="1" DataSetColumn="1" />
+              <Mapping SourceColumn="2" DataSetColumn="2" />
+              <Mapping SourceColumn="3" DataSetColumn="3" />
+              <Mapping SourceColumn="4" DataSetColumn="4" />
+              <Mapping SourceColumn="5" DataSetColumn="5" />
+              <Mapping SourceColumn="6" DataSetColumn="6" />
+              <Mapping SourceColumn="7" DataSetColumn="7" />
+              <Mapping SourceColumn="8" DataSetColumn="8" />
+              <Mapping SourceColumn="9" DataSetColumn="9" />
+              <Mapping SourceColumn="10" DataSetColumn="10" />
+              <Mapping SourceColumn="11" DataSetColumn="11" />
+              <Mapping SourceColumn="12" DataSetColumn="12" />
+              <Mapping SourceColumn="13" DataSetColumn="13" />
+              <Mapping SourceColumn="14" DataSetColumn="14" />
+              <Mapping SourceColumn="15" DataSetColumn="15" />
+              <Mapping SourceColumn="16" DataSetColumn="16" />
+              <Mapping SourceColumn="17" DataSetColumn="17" />
+              <Mapping SourceColumn="18" DataSetColumn="18" />
+              <Mapping SourceColumn="19" DataSetColumn="19" />
+              <Mapping SourceColumn="20" DataSetColumn="20" />
+              <Mapping SourceColumn="21" DataSetColumn="21" />
+              <Mapping SourceColumn="22" DataSetColumn="22" />
+              <Mapping SourceColumn="23" DataSetColumn="23" />
+              <Mapping SourceColumn="24" DataSetColumn="24" />
+              <Mapping SourceColumn="remark" DataSetColumn="remark" />
+              <Mapping SourceColumn="tagRemark" DataSetColumn="tagRemark" />
+              <Mapping SourceColumn="ExamWeek" DataSetColumn="ExamWeek" />
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="dept" DataSetColumn="dept" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="ExamCheck.dbo.Process" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="SelectAllProcess" GetMethodModifier="Public" GetMethodName="SelectAllProcess" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectAllProcess" UserSourceName="SelectAllProcess">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [1], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [2], [20], [21], [22], [23], [24], [3], [4], [5], [6], [7], [8], [9], ExamWeek, ID, class, dept, remark, tagRemark FROM Process</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="ExamCheck.dbo.Process" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="SelectWeekByClassWithProcess" GetMethodModifier="Public" GetMethodName="SelectWeekByClassWithProcess" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectWeekByClassWithProcess" UserSourceName="SelectWeekByClassWithProcess">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [1], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [2], [20], [21], [22], [23], [24], [3], [4], [5], [6], [7], [8], [9], ExamWeek, ID, class, dept, remark, tagRemark FROM Process WHERE (class LIKE '%' + @class_class + '%')</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="class_class" ColumnName="class" DataSourceName="ExamCheck.dbo.Process" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@class_class" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="class" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateTagRemarkByClass" Modifier="Public" Name="UpdateTagRemarkByClass" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="UpdateTagRemarkByClass">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE Process
+set tagRemark = @tag
+where class = @class</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="tag" ColumnName="tagRemark" DataSourceName="ExamCheck.dbo.Process" DataTypeServer="nvarchar(MAX)" DbType="String" Direction="Input" ParameterName="@tag" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="tagRemark" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="class" ColumnName="class" DataSourceName="ExamCheck.dbo.Process" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@class" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="class" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateWeekByClass" Modifier="Public" Name="UpdateWeekByClass" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateWeekByClass">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE Process
+set ExamWeek = @week
+where class = @class</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="week" ColumnName="ExamWeek" DataSourceName="ExamCheck.dbo.Process" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@week" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="ExamWeek" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="class" ColumnName="class" DataSourceName="ExamCheck.dbo.Process" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@class" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="class" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Week_Course_ClassTableAdapter" GeneratorDataComponentClassName="Week_Course_ClassTableAdapter" Name="Week_Course_Class" UserDataComponentName="Week_Course_ClassTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="ExamCheck.dbo.Week_Course_Class" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [Week_Course_Class] WHERE (([ID] = @Original_ID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Week_Course_Class] ([course_num], [course_serialNum], [course_name], [class_time], [class_class], [course_Week], [class_week], [class_campus], [test_week], [type]) VALUES (@course_num, @course_serialNum, @course_name, @class_time, @class_class, @course_Week, @class_week, @class_campus, @test_week, @type)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@course_num" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="course_num" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@course_serialNum" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="course_serialNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@course_name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="course_name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@class_time" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="class_time" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@class_class" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="class_class" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@course_Week" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="course_Week" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@class_week" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="class_week" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@class_campus" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="class_campus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@test_week" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="test_week" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Week_Course_Class.* FROM Week_Course_Class</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Week_Course_Class] SET [course_num] = @course_num, [course_serialNum] = @course_serialNum, [course_name] = @course_name, [class_time] = @class_time, [class_class] = @class_class, [course_Week] = @course_Week, [class_week] = @class_week, [class_campus] = @class_campus, [test_week] = @test_week, [type] = @type WHERE (([ID] = @Original_ID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@course_num" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="course_num" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@course_serialNum" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="course_serialNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@course_name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="course_name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@class_time" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="class_time" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@class_class" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="class_class" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@course_Week" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="course_Week" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@class_week" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="class_week" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@class_campus" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="class_campus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@test_week" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="test_week" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="course_num" DataSetColumn="course_num" />
+              <Mapping SourceColumn="course_serialNum" DataSetColumn="course_serialNum" />
+              <Mapping SourceColumn="course_name" DataSetColumn="course_name" />
+              <Mapping SourceColumn="class_time" DataSetColumn="class_time" />
+              <Mapping SourceColumn="class_class" DataSetColumn="class_class" />
+              <Mapping SourceColumn="course_Week" DataSetColumn="course_Week" />
+              <Mapping SourceColumn="class_week" DataSetColumn="class_week" />
+              <Mapping SourceColumn="class_campus" DataSetColumn="class_campus" />
+              <Mapping SourceColumn="test_week" DataSetColumn="test_week" />
+              <Mapping SourceColumn="type" DataSetColumn="type" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteAll" Modifier="Public" Name="DeleteAll" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteAll">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM Week_Course_Class; truncate table Week_Course_Class</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="ExamCheck.dbo.Week_Course_Class" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="SelectAllWeek" GetMethodModifier="Public" GetMethodName="SelectAllWeek" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectAllWeek" UserSourceName="SelectAllWeek">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Week_Course_Class.* FROM Week_Course_Class</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="ExamCheck.dbo.Week_Course_Class" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="SelectByID" GetMethodModifier="Public" GetMethodName="SelectByID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectByID" UserSourceName="SelectByID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Week_Course_Class.* FROM Week_Course_Class
+where ID = @ID
+</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID" ColumnName="ID" DataSourceName="ExamCheck.dbo.Week_Course_Class" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="ExamCheck.dbo.Week_Course_Class" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="SelectTimeByID" GetMethodModifier="Public" GetMethodName="SelectTimeByID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="SelectTimeByID" UserSourceName="SelectTimeByID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT class_time  FROM Week_Course_Class
+where ID = @ID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID" ColumnName="ID" DataSourceName="ExamCheck.dbo.Week_Course_Class" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="ExamCheck.dbo.Week_Course_Class" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="UpdateClassWeekByProcess" GetMethodModifier="Public" GetMethodName="UpdateClassWeekByProcess" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="UpdateClassWeekByProcess" UserSourceName="UpdateClassWeekByProcess">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE  Week_Course_Class
+SET         class_week = Process.ExamWeek
+FROM      Week_Course_Class INNER JOIN
+                Process ON Week_Course_Class.class_class = Process.class</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="ExamCheck.dbo.Week_Course_Class" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="UpdateCourseWeek" GetMethodModifier="Public" GetMethodName="UpdateCourseWeek" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="UpdateCourseWeek" UserSourceName="UpdateCourseWeek">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE Week_Course_Class
+set course_week = @course_week
+where ID= @ID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="course_week" ColumnName="course_Week" DataSourceName="ExamCheck.dbo.Week_Course_Class" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@course_week" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="course_Week" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID" ColumnName="ID" DataSourceName="ExamCheck.dbo.Week_Course_Class" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="ExamCheck.dbo.Week_Course_Class" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="UpdateTestWeekByClassWeekIsNull" GetMethodModifier="Public" GetMethodName="UpdateTestWeekByClassWeekIsNull" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="UpdateTestWeekByClassWeekIsNull" UserSourceName="UpdateTestWeekByClassWeekIsNull">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE  Week_Course_Class
+SET         test_week = NULL
+WHERE   (class_week IS NULL)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="ExamCheck.dbo.Week_Course_Class" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="UpdateTestweekByExamCourse" GetMethodModifier="Public" GetMethodName="UpdateTestweekByExamCourse" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="UpdateTestweekByExamCourse" UserSourceName="UpdateTestweekByExamCourse">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE Week_Course_Class SET test_week = ExaminationCourse.test_week FROM Week_Course_Class INNER JOIN ExaminationCourse ON Week_Course_Class.course_num = ExaminationCourse.course_num</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CheckConnStr (Web.config)" DbObjectName="ExamCheck.dbo.Week_Course_Class" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="UpdateWeekOfWeek" GetMethodModifier="Public" GetMethodName="UpdateWeekOfWeek" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="UpdateWeekOfWeek" UserSourceName="UpdateWeekOfWeek">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE  Week_Course_Class
+SET         class_week=Process.ExamWeek, course_Week = @course_week
+FROM      Week_Course_Class INNER JOIN
+                Process ON Week_Course_Class.class_class = Process.class
+WHERE   (Week_Course_Class.ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="course_week" ColumnName="course_Week" DataSourceName="ExamCheck.dbo.Week_Course_Class" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@course_week" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="course_Week" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID" ColumnName="ID" DataSourceName="ExamCheck.dbo.Week_Course_Class" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSWeek" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DSWeek" msprop:Generator_UserDSName="DSWeek">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Process" msprop:Generator_TableClassName="ProcessDataTable" msprop:Generator_TableVarName="tableProcess" msprop:Generator_TablePropName="Process" msprop:Generator_RowDeletingName="ProcessRowDeleting" msprop:Generator_RowChangingName="ProcessRowChanging" msprop:Generator_RowEvHandlerName="ProcessRowChangeEventHandler" msprop:Generator_RowDeletedName="ProcessRowDeleted" msprop:Generator_UserTableName="Process" msprop:Generator_RowChangedName="ProcessRowChanged" msprop:Generator_RowEvArgName="ProcessRowChangeEvent" msprop:Generator_RowClassName="ProcessRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="class" msprop:Generator_ColumnVarNameInTable="columnclass" msprop:Generator_ColumnPropNameInRow="_class" msprop:Generator_ColumnPropNameInTable="classColumn" msprop:Generator_UserColumnName="class" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031_" msprop:Generator_ColumnVarNameInTable="column1" msprop:Generator_ColumnPropNameInRow="_1" msprop:Generator_ColumnPropNameInTable="_1Column" msprop:Generator_UserColumnName="1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0032_" msprop:Generator_ColumnVarNameInTable="column2" msprop:Generator_ColumnPropNameInRow="_2" msprop:Generator_ColumnPropNameInTable="_2Column" msprop:Generator_UserColumnName="2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0033_" msprop:Generator_ColumnVarNameInTable="column3" msprop:Generator_ColumnPropNameInRow="_3" msprop:Generator_ColumnPropNameInTable="_3Column" msprop:Generator_UserColumnName="3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0034_" msprop:Generator_ColumnVarNameInTable="column4" msprop:Generator_ColumnPropNameInRow="_4" msprop:Generator_ColumnPropNameInTable="_4Column" msprop:Generator_UserColumnName="4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0035_" msprop:Generator_ColumnVarNameInTable="column5" msprop:Generator_ColumnPropNameInRow="_5" msprop:Generator_ColumnPropNameInTable="_5Column" msprop:Generator_UserColumnName="5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0036_" msprop:Generator_ColumnVarNameInTable="column6" msprop:Generator_ColumnPropNameInRow="_6" msprop:Generator_ColumnPropNameInTable="_6Column" msprop:Generator_UserColumnName="6" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0037_" msprop:Generator_ColumnVarNameInTable="column7" msprop:Generator_ColumnPropNameInRow="_7" msprop:Generator_ColumnPropNameInTable="_7Column" msprop:Generator_UserColumnName="7" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0038_" msprop:Generator_ColumnVarNameInTable="column8" msprop:Generator_ColumnPropNameInRow="_8" msprop:Generator_ColumnPropNameInTable="_8Column" msprop:Generator_UserColumnName="8" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0039_" msprop:Generator_ColumnVarNameInTable="column9" msprop:Generator_ColumnPropNameInRow="_9" msprop:Generator_ColumnPropNameInTable="_9Column" msprop:Generator_UserColumnName="9" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031_0" msprop:Generator_ColumnVarNameInTable="column10" msprop:Generator_ColumnPropNameInRow="_10" msprop:Generator_ColumnPropNameInTable="_10Column" msprop:Generator_UserColumnName="10" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031_1" msprop:Generator_ColumnVarNameInTable="column11" msprop:Generator_ColumnPropNameInRow="_11" msprop:Generator_ColumnPropNameInTable="_11Column" msprop:Generator_UserColumnName="11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031_2" msprop:Generator_ColumnVarNameInTable="column12" msprop:Generator_ColumnPropNameInRow="_12" msprop:Generator_ColumnPropNameInTable="_12Column" msprop:Generator_UserColumnName="12" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031_3" msprop:Generator_ColumnVarNameInTable="column13" msprop:Generator_ColumnPropNameInRow="_13" msprop:Generator_ColumnPropNameInTable="_13Column" msprop:Generator_UserColumnName="13" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031_4" msprop:Generator_ColumnVarNameInTable="column14" msprop:Generator_ColumnPropNameInRow="_14" msprop:Generator_ColumnPropNameInTable="_14Column" msprop:Generator_UserColumnName="14" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031_5" msprop:Generator_ColumnVarNameInTable="column15" msprop:Generator_ColumnPropNameInRow="_15" msprop:Generator_ColumnPropNameInTable="_15Column" msprop:Generator_UserColumnName="15" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031_6" msprop:Generator_ColumnVarNameInTable="column16" msprop:Generator_ColumnPropNameInRow="_16" msprop:Generator_ColumnPropNameInTable="_16Column" msprop:Generator_UserColumnName="16" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031_7" msprop:Generator_ColumnVarNameInTable="column17" msprop:Generator_ColumnPropNameInRow="_17" msprop:Generator_ColumnPropNameInTable="_17Column" msprop:Generator_UserColumnName="17" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031_8" msprop:Generator_ColumnVarNameInTable="column18" msprop:Generator_ColumnPropNameInRow="_18" msprop:Generator_ColumnPropNameInTable="_18Column" msprop:Generator_UserColumnName="18" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031_9" msprop:Generator_ColumnVarNameInTable="column19" msprop:Generator_ColumnPropNameInRow="_19" msprop:Generator_ColumnPropNameInTable="_19Column" msprop:Generator_UserColumnName="19" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0032_0" msprop:Generator_ColumnVarNameInTable="column20" msprop:Generator_ColumnPropNameInRow="_20" msprop:Generator_ColumnPropNameInTable="_20Column" msprop:Generator_UserColumnName="20" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0032_1" msprop:Generator_ColumnVarNameInTable="column21" msprop:Generator_ColumnPropNameInRow="_21" msprop:Generator_ColumnPropNameInTable="_21Column" msprop:Generator_UserColumnName="21" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0032_2" msprop:Generator_ColumnVarNameInTable="column22" msprop:Generator_ColumnPropNameInRow="_22" msprop:Generator_ColumnPropNameInTable="_22Column" msprop:Generator_UserColumnName="22" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0032_3" msprop:Generator_ColumnVarNameInTable="column23" msprop:Generator_ColumnPropNameInRow="_23" msprop:Generator_ColumnPropNameInTable="_23Column" msprop:Generator_UserColumnName="23" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0032_4" msprop:Generator_ColumnVarNameInTable="column24" msprop:Generator_ColumnPropNameInRow="_24" msprop:Generator_ColumnPropNameInTable="_24Column" msprop:Generator_UserColumnName="24" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="remark" msprop:Generator_ColumnVarNameInTable="columnremark" msprop:Generator_ColumnPropNameInRow="remark" msprop:Generator_ColumnPropNameInTable="remarkColumn" msprop:Generator_UserColumnName="remark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tagRemark" msprop:Generator_ColumnVarNameInTable="columntagRemark" msprop:Generator_ColumnPropNameInRow="tagRemark" msprop:Generator_ColumnPropNameInTable="tagRemarkColumn" msprop:Generator_UserColumnName="tagRemark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExamWeek" msprop:Generator_ColumnVarNameInTable="columnExamWeek" msprop:Generator_ColumnPropNameInRow="ExamWeek" msprop:Generator_ColumnPropNameInTable="ExamWeekColumn" msprop:Generator_UserColumnName="ExamWeek" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="dept" msprop:Generator_ColumnVarNameInTable="columndept" msprop:Generator_ColumnPropNameInRow="dept" msprop:Generator_ColumnPropNameInTable="deptColumn" msprop:Generator_UserColumnName="dept" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Week_Course_Class" msprop:Generator_TableClassName="Week_Course_ClassDataTable" msprop:Generator_TableVarName="tableWeek_Course_Class" msprop:Generator_TablePropName="Week_Course_Class" msprop:Generator_RowDeletingName="Week_Course_ClassRowDeleting" msprop:Generator_RowChangingName="Week_Course_ClassRowChanging" msprop:Generator_RowEvHandlerName="Week_Course_ClassRowChangeEventHandler" msprop:Generator_RowDeletedName="Week_Course_ClassRowDeleted" msprop:Generator_UserTableName="Week_Course_Class" msprop:Generator_RowChangedName="Week_Course_ClassRowChanged" msprop:Generator_RowEvArgName="Week_Course_ClassRowChangeEvent" msprop:Generator_RowClassName="Week_Course_ClassRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="course_num" msprop:Generator_ColumnVarNameInTable="columncourse_num" msprop:Generator_ColumnPropNameInRow="course_num" msprop:Generator_ColumnPropNameInTable="course_numColumn" msprop:Generator_UserColumnName="course_num" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="course_serialNum" msprop:Generator_ColumnVarNameInTable="columncourse_serialNum" msprop:Generator_ColumnPropNameInRow="course_serialNum" msprop:Generator_ColumnPropNameInTable="course_serialNumColumn" msprop:Generator_UserColumnName="course_serialNum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="course_name" msprop:Generator_ColumnVarNameInTable="columncourse_name" msprop:Generator_ColumnPropNameInRow="course_name" msprop:Generator_ColumnPropNameInTable="course_nameColumn" msprop:Generator_UserColumnName="course_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="class_time" msprop:Generator_ColumnVarNameInTable="columnclass_time" msprop:Generator_ColumnPropNameInRow="class_time" msprop:Generator_ColumnPropNameInTable="class_timeColumn" msprop:Generator_UserColumnName="class_time" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="class_class" msprop:Generator_ColumnVarNameInTable="columnclass_class" msprop:Generator_ColumnPropNameInRow="class_class" msprop:Generator_ColumnPropNameInTable="class_classColumn" msprop:Generator_UserColumnName="class_class" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="course_Week" msprop:Generator_ColumnVarNameInTable="columncourse_Week" msprop:Generator_ColumnPropNameInRow="course_Week" msprop:Generator_ColumnPropNameInTable="course_WeekColumn" msprop:Generator_UserColumnName="course_Week" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="class_week" msprop:Generator_ColumnVarNameInTable="columnclass_week" msprop:Generator_ColumnPropNameInRow="class_week" msprop:Generator_ColumnPropNameInTable="class_weekColumn" msprop:Generator_UserColumnName="class_week" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="class_campus" msprop:Generator_ColumnVarNameInTable="columnclass_campus" msprop:Generator_ColumnPropNameInRow="class_campus" msprop:Generator_ColumnPropNameInTable="class_campusColumn" msprop:Generator_UserColumnName="class_campus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="test_week" msprop:Generator_ColumnVarNameInTable="columntest_week" msprop:Generator_ColumnPropNameInRow="test_week" msprop:Generator_ColumnPropNameInTable="test_weekColumn" msprop:Generator_UserColumnName="test_week" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_UserColumnName="type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Process" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="Week_Course_Class_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Week_Course_Class" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

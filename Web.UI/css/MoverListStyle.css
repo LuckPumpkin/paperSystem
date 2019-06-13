@@ -1,0 +1,25 @@
+﻿table.MoverListTable .ListHeader
+{
+    padding: 5px 0px 5px 0px;
+}
+table.MoverListTable .LeftListBox
+{
+    width: 170px;
+    height: 185px;
+}
+table.MoverListTable .RightListBox
+{
+    width: 170px;
+    height: 185px;
+}
+table.MoverListTable tr td input
+{
+    width: 40px;
+    height: 24px;
+    margin: 0px 5px 5px 5px;
+}
+table.MoverListTable tr td input.UpDownButton
+{
+    width: 50px;
+    height: 24px;
+}

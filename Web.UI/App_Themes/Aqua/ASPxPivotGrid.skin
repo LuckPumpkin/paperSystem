@@ -1,0 +1,13 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxPivotGrid" TagPrefix="dxwpg" %>
+<%@ Register Assembly="DevExpress.PivotGrid.v14.1.Core, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraPivotGrid" TagPrefix="temp" %>
+<dxwpg:ASPxPivotGrid runat="server">
+	<Styles CssFilePath="~/App_Themes/Aqua/{0}/styles.css" CssPostfix="Aqua" />
+    <OptionsLoadingPanel ImagePosition="Top" />
+    <OptionsPager CurrentPageNumberFormat="{0}">
+    </OptionsPager>
+    <Images SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css">        
+        <CustomizationFieldsBackground Url="~/App_Themes/Aqua/PivotGrid/pcHeaderBack.gif" />
+        <TreeViewNodeLoadingPanel Url="~/App_Themes/Aqua/PivotGrid/tvNodeLoading.gif" />
+    </Images>
+</dxwpg:ASPxPivotGrid>

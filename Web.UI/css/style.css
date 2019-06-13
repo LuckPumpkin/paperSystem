@@ -1,0 +1,147 @@
+html {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	font-size: 12px;
+	font-family: ËÎÌו, Arial, Helvetica, sans-serif;
+	padding: 5px 15px 15px 40px;
+}
+fieldset {
+    padding: 10px;
+    margin-bottom: 15px;
+	color: #333;
+    border: #a3c0e8 solid 1px;
+}
+legend {
+    color: #07519A;
+    font-weight:800;
+    width: 135px;
+} 
+table.dataTable {
+	color: #333;
+	border-collapse: collapse;
+	border: 1px solid #a3c0e8;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.dataTable tr td, th {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 4px;
+	border: 1px solid #bed6f6;
+}
+table.listTable{
+	color: #333;
+    border-collapse:collapse;
+	border-bottom: 1px dotted black;
+    border-left:0px hidden;
+    border-right:0px hidden;
+    border-top:0px hidden;
+    margin-bottom:10px;
+}
+th a, a:visited {
+	color: Black;
+}
+th a:hover, a:focus, a:active {
+	color: #f37028;
+	text-decoration: underline;
+}
+h2 {
+	font-size: 16px;
+	font-weight: 700;
+	color: Navy;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+h3 {
+	font-size: 12px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+p {
+	font-size: 12px;
+	line-height: 20px;
+    text-align: left;
+}
+hr {
+    border-style: dotted none none none;
+    border-color: Green;
+    border-width: 1px;
+    border-collapse: collapse;
+    height: 1px;
+    text-align: left;
+    margin: 10px 0px 15px 0px;
+}
+a, a:visited {
+	color: #07519A;
+	text-decoration: none;
+    text-align: left;
+}
+a:hover, a:focus, a:active {
+	color: #f37028;
+	text-decoration: underline;
+}
+.headerRow {
+	background-color: #dbeafe;
+	background-image: url(../images/gvHeaderBackground.gif);
+	height: 21px;
+}
+.FixedHeader
+        {
+            position: relative;
+            top: expression(this.offsetParent.scrollTop);
+            background-color: #dbeafe;
+            background-image: url(../images/gvHeaderBackground.gif);
+            height: 21px;
+            text-align: center;
+            vertical-align: middle;
+        }
+.itemRow {
+	background-color: #FFF;
+}
+.alternateRow {
+	background-color: #f4f8fe;
+}
+.highlightRow {
+	background-color: #ffe7a2;
+}
+.selectedRow {
+	background-color: #ccffcc;
+}
+.pagerRow {
+	color: Black;
+	background-color: #dbeafe;
+	background-image: url(../images/gvHeaderBackground.gif);
+	text-align: center;
+	padding: 3px;
+}
+.listPagerRow {
+	color: Black;
+    border-collapse:collapse;
+	border-top: 1px dotted black;
+	border-bottom: 1px dotted black;
+    border-left:0px hidden;
+    border-right:0px hidden;
+	padding: 3px 10px 3px 10px;
+}
+.mousehover {
+	background-color: #cccccc;
+	color: Red;
+}
+.btnBorder {
+	border-width: 0px;
+	border-style: solid;
+	border-color: Red;
+}
+.red {
+    color:red;
+}
+.errors {
+    border: 1px solid #faebcc;
+    color: red;
+    margin: 0px 5px 15px 5px;
+    padding: 5px 5px 5px 40px;
+    background: #fcf8e3 url(../../images/exclamation_icon.png) no-repeat 10px 50%;
+}

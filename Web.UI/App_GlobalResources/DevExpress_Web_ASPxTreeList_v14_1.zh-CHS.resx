@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASPxTreeListStringId.CustomizationWindowCaption">
+    <value>字段选择器</value>
+  </data>
+  <data name="ASPxTreeListStringId.CommandEdit">
+    <value>编辑</value>
+  </data>
+  <data name="ASPxTreeListStringId.CommandNew">
+    <value>新建</value>
+  </data>
+  <data name="ASPxTreeListStringId.CommandDelete">
+    <value>删除</value>
+  </data>
+  <data name="ASPxTreeListStringId.CommandUpdate">
+    <value>更新</value>
+  </data>
+  <data name="ASPxTreeListStringId.CommandCancel">
+    <value>取消</value>
+  </data>
+  <data name="ASPxTreeListStringId.ConfirmDelete">
+    <value>确定删除?</value>
+  </data>
+  <data name="ASPxTreeListStringId.RecursiveDeleteError">
+    <value>该节点包含子节点.</value>
+  </data>
+  <data name="ASPxTreeListStringId.Alt_Expand">
+    <value>[展开]</value>
+  </data>
+  <data name="ASPxTreeListStringId.Alt_Collapse">
+    <value>[折叠]</value>
+  </data>
+  <data name="ASPxTreeListStringId.Alt_SortedAscending">
+    <value>(升序)</value>
+  </data>
+  <data name="ASPxTreeListStringId.Alt_SortedDescending">
+    <value>(降序)</value>
+  </data>
+  <data name="ASPxTreeListStringId.Alt_DragAndDropHideColumnIcon">
+    <value>隐藏</value>
+  </data>
+</root>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASPxperienceStringId.Loading">
+    <value>加载中&amp;hellip;</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_All">
+    <value>全部</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_First">
+    <value>首页</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_Prev">
+    <value>上一页</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_Next">
+    <value>下一页</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_Last">
+    <value>末页</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_SummaryFormat">
+    <value>第 {0} / {1} 页 ({2} 项)</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_SummaryAllPagesFormat">
+    <value>第 {0} - {1} 页 ({2} 项)</value>
+  </data>
+  <data name="ASPxperienceStringId.DataView_PagerSummaryFormat">
+    <value>第 {0} / {1} 页</value>
+  </data>
+  <data name="ASPxperienceStringId.DataView_PagerSummaryAllPages">
+    <value>所有页</value>
+  </data>
+  <data name="ASPxperienceStringId.DataViewBase_EmptyDataText">
+    <value>没有数据</value>
+  </data>
+  <data name="ASPxperienceStringId.NewsControl_BackToTop">
+    <value>回到顶部</value>
+  </data>
+  <data name="ASPxperienceStringId.NewsControl_Page">
+    <value>页:</value>
+  </data>
+  <data name="ASPxperienceStringId.PopupControl_CloseButton">
+    <value>[关闭]</value>
+  </data>
+  <data name="ASPxperienceStringId.PopupControl_SizeGrip">
+    <value>[调整大小]</value>
+  </data>
+  <data name="ASPxperienceStringId.TitleIndex_FilterCaption">
+    <value>过滤器:&amp;nbsp;&amp;nbsp;&amp;nbsp;</value>
+  </data>
+  <data name="ASPxperienceStringId.TitleIndex_FilterHint">
+    <value>&lt;b&gt;?&lt;/b&gt; = 任意单字
+&lt;b&gt;*&lt;/b&gt; = 任意字词</value>
+  </data>
+  <data name="ASPxperienceStringId.TitleIndex_BackToTop">
+    <value>[回到顶部]</value>
+  </data>
+  <data name="ASPxperienceStringId.TitleIndex_NoData">
+    <value>没有数据符合此过滤条件</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_RemoveButton">
+    <value>移除</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_AddButton">
+    <value>添加</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_UploadButton">
+    <value>上传</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_CancelButton">
+    <value>取消</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_InvalidWindowsPath">
+    <value>文件路径 "{0}" 不是一个有效的 Windows 路径.</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_MaxRequestLengthExceeded">
+    <value>已选的待上传文件的总大小超过了程序定义的最大值({0} Kb).</value>
+  </data>
+  <data name="ASPxperienceStringId.DataView_PagerPageSize" xml:space="preserve">
+    <value>页尺寸：</value>
+  </data>
+  <data name="ASPxperienceStringId.DataView_PagerRowPerPage" xml:space="preserve">
+    <value>每页行数：</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_DeleteConfirm" xml:space="preserve">
+    <value>确定要删除 '{0}'？</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorAccessProhibited" xml:space="preserve">
+    <value>禁止访问</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorAlreadyExists" xml:space="preserve">
+    <value>文件或目录已经存在</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorFileNotFound" xml:space="preserve">
+    <value>文件未找到</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorFolderNotFound" xml:space="preserve">
+    <value>目录未找到</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorInvalidSymbols" xml:space="preserve">
+    <value>名称包含非法字符</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorIO" xml:space="preserve">
+    <value>意外错误</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorNameCannotBeEmpty" xml:space="preserve">
+    <value>文件或目录名不能为空</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorNoAccess" xml:space="preserve">
+    <value>禁止访问</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorOther" xml:space="preserve">
+    <value>未知错误</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorRootFolderNotSpecified" xml:space="preserve">
+    <value>根目录未指定或者不存在</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorThumbnail" xml:space="preserve">
+    <value>缩略图目录无法访问</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorUploadSeveralFiles" xml:space="preserve">
+    <value>{0}文件上传失败，共{1}文件。</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorUsedByAnotherProcess" xml:space="preserve">
+    <value>操作未能完成，因为文件或目录正在被其他进程占用。</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorWrongExtension" xml:space="preserve">
+    <value>操作未能完成，不允许的文件扩展名。</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_Filter" xml:space="preserve">
+    <value>过滤条件：</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_Folder" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_FolderLocked" xml:space="preserve">
+    <value>上传锁定</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_MovePopupHeader" xml:space="preserve">
+    <value>选择目标目录</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_Ok" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_Path" xml:space="preserve">
+    <value>路径：</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbCreate" xml:space="preserve">
+    <value>建立 (F7)</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbDelete" xml:space="preserve">
+    <value>删除 (Del)</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbDownload" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbMove" xml:space="preserve">
+    <value>移动 (F6)</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbRefresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbRename" xml:space="preserve">
+    <value>重命名 (F2)</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_PageSize" xml:space="preserve">
+    <value>页尺寸：</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_PageSizeAllItem" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="ASPxperienceStringId.TreeView_AltCollapse" xml:space="preserve">
+    <value>收缩</value>
+  </data>
+  <data name="ASPxperienceStringId.TreeView_AltExpand" xml:space="preserve">
+    <value>展开</value>
+  </data>
+  <data name="ASPxperienceStringId.TreeView_AltLoading" xml:space="preserve">
+    <value>加载</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_AccessDeniedError" xml:space="preserve">
+    <value>服务器路径 "{0}" 禁止访问，可能是写入权限不足。</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_BrowseButton" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_ClearFileSelectionButtonToolTip" xml:space="preserve">
+    <value>清除选择</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_EnctypeError" xml:space="preserve">
+    <value>文件上传失败，因为 form's enctype attribute is not set to 'multipart/form-data'</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_FileDoesNotExistError" xml:space="preserve">
+    <value>上传的文件不存在</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_GeneralError" xml:space="preserve">
+    <value>上传失败</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_MaxSize" xml:space="preserve">
+    <value>文件大小超过了最大允许值 {0} bytes</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_MultiSelection" xml:space="preserve">
+    <value>注意！
+
+下列 {0} 文件非法，因为文件大小超过了最大允许值 ({1}) 或者文件扩展名不允许。这些文件已被移除不能上传。
+
+{2}</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_NotAllowedContentTypes" xml:space="preserve">
+    <value>内容类型不允许</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_NotAllowedFileExtension" xml:space="preserve">
+    <value>文件扩展名不允许</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_SelectedSeveralFiles" xml:space="preserve">
+    <value>选择 {0} 个文件上传</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_SilverlightPluginLink" xml:space="preserve">
+    <value>请安装 &lt;a href="{0}"&gt;Microsoft Silverlight v3 或更高版本&lt;/a&gt;</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_UnspecifiedError" xml:space="preserve">
+    <value>服务器未知错误</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_UploadWasCanceledError" xml:space="preserve">
+    <value>文件上传已取消</value>
+  </data>
+</root>

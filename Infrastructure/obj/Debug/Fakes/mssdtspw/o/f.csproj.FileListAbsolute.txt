@@ -1,0 +1,12 @@
+D:\编程\试卷管理系统\7-14\试卷管理系统7-14 请注意还原数据库\PaperSystem\Infrastructure\obj\Debug\Fakes\mssdtspw\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\PaperSystem12-26\Infrastructure\obj\Debug\Fakes\mssdtspw\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\PaperSystem\Infrastructure\obj\Debug\Fakes\mssdtspw\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\PaperSystem4-17\Infrastructure\obj\Debug\Fakes\mssdtspw\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Bairong\Desktop\PaperSystem4-22\Infrastructure\obj\Debug\Fakes\mssdtspw\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Bairong\Desktop\PaperSystem5-15\Infrastructure\obj\Debug\Fakes\mssdtspw\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Bairong\Desktop\PaperSystem5-16\Infrastructure\obj\Debug\Fakes\mssdtspw\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\PaperSystem5-29\Infrastructure\obj\Debug\Fakes\mssdtspw\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Bairong\Desktop\PaperSystem5-30\Infrastructure\obj\Debug\Fakes\mssdtspw\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\PaperSystem5-30\Infrastructure\obj\Debug\Fakes\mssdtspw\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Bairong\Desktop\PaperSystem5-31\Infrastructure\obj\Debug\Fakes\mssdtspw\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Bairong\Desktop\PaperSystem6-04\Infrastructure\obj\Debug\Fakes\mssdtspw\o\f.csprojResolveAssemblyReference.cache

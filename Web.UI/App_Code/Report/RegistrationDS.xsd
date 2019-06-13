@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RegistrationDS" targetNamespace="http://tempuri.org/RegistrationDS.xsd" xmlns:mstns="http://tempuri.org/RegistrationDS.xsd" xmlns="http://tempuri.org/RegistrationDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="AppConnStr" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AppConnStr (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.AppConnStr.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CourseRegTableAdapter" GeneratorDataComponentClassName="CourseRegTableAdapter" Name="CourseReg" UserDataComponentName="CourseRegTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   Course.course_no, Course.teachingPlan, Course.course_dept, Course.course_name, Course.course_type AS type, 
+                Course.course_attribute, Registration.ID AS RegistrationID, Registration.grade, Registration.profession, 
+                Registration.examMothed, Registration.examLength, Registration.examTime, Registration.TiKuorZiNi, 
+                Registration.coverage, Registration.expectTime, Registration.expectScore, Registration.examPercent, 
+                Registration.professionAudit, Registration.collegeAudit, Registration.departmentChargeAudit, Registration.state, 
+                Paper.ID, Paper.paper_AorB, Paper.paper_state, Paper.paper_num, Paper.whitePaper_num, Paper.paper_copyNum, 
+                Paper.print_type, Paper.paper_uintPrice, Paper.whitePaper_unitPrice, Paper.copy_fee, Paper.binding_fee, Paper.flag, 
+                Paper.readed, Registration.stuNum, dbo.TeacherInReg(Course.course_no) AS teacher, 
+                dbo.ClassInReg(Course.course_no) AS class
+FROM      Course INNER JOIN
+                Registration ON Course.ID = Registration.courseID INNER JOIN
+                Paper ON Course.ID = Paper.courseID
+WHERE   (Paper.flag LIKE '%考试%')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="course_no" DataSetColumn="course_no" />
+              <Mapping SourceColumn="teachingPlan" DataSetColumn="teachingPlan" />
+              <Mapping SourceColumn="course_dept" DataSetColumn="course_dept" />
+              <Mapping SourceColumn="course_name" DataSetColumn="course_name" />
+              <Mapping SourceColumn="course_attribute" DataSetColumn="course_attribute" />
+              <Mapping SourceColumn="RegistrationID" DataSetColumn="RegistrationID" />
+              <Mapping SourceColumn="grade" DataSetColumn="grade" />
+              <Mapping SourceColumn="profession" DataSetColumn="profession" />
+              <Mapping SourceColumn="examMothed" DataSetColumn="examMothed" />
+              <Mapping SourceColumn="examLength" DataSetColumn="examLength" />
+              <Mapping SourceColumn="examTime" DataSetColumn="examTime" />
+              <Mapping SourceColumn="TiKuorZiNi" DataSetColumn="TiKuorZiNi" />
+              <Mapping SourceColumn="coverage" DataSetColumn="coverage" />
+              <Mapping SourceColumn="expectTime" DataSetColumn="expectTime" />
+              <Mapping SourceColumn="expectScore" DataSetColumn="expectScore" />
+              <Mapping SourceColumn="examPercent" DataSetColumn="examPercent" />
+              <Mapping SourceColumn="professionAudit" DataSetColumn="professionAudit" />
+              <Mapping SourceColumn="collegeAudit" DataSetColumn="collegeAudit" />
+              <Mapping SourceColumn="departmentChargeAudit" DataSetColumn="departmentChargeAudit" />
+              <Mapping SourceColumn="state" DataSetColumn="state" />
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="paper_AorB" DataSetColumn="paper_AorB" />
+              <Mapping SourceColumn="paper_state" DataSetColumn="paper_state" />
+              <Mapping SourceColumn="paper_num" DataSetColumn="paper_num" />
+              <Mapping SourceColumn="whitePaper_num" DataSetColumn="whitePaper_num" />
+              <Mapping SourceColumn="paper_copyNum" DataSetColumn="paper_copyNum" />
+              <Mapping SourceColumn="print_type" DataSetColumn="print_type" />
+              <Mapping SourceColumn="paper_uintPrice" DataSetColumn="paper_uintPrice" />
+              <Mapping SourceColumn="whitePaper_unitPrice" DataSetColumn="whitePaper_unitPrice" />
+              <Mapping SourceColumn="copy_fee" DataSetColumn="copy_fee" />
+              <Mapping SourceColumn="binding_fee" DataSetColumn="binding_fee" />
+              <Mapping SourceColumn="flag" DataSetColumn="flag" />
+              <Mapping SourceColumn="readed" DataSetColumn="readed" />
+              <Mapping SourceColumn="stuNum" DataSetColumn="stuNum" />
+              <Mapping SourceColumn="class" DataSetColumn="class" />
+              <Mapping SourceColumn="teacher" DataSetColumn="teacher" />
+              <Mapping SourceColumn="type" DataSetColumn="type" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByRegID" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByRegID" GeneratorSourceName="FillByRegID" GetMethodModifier="Public" GetMethodName="GetDataByRegID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByRegID" UserSourceName="FillByRegID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   Course.course_no, Course.teachingPlan, Course.course_dept, Course.course_name, Course.course_type AS type, 
+                Course.course_attribute, Registration.ID AS RegistrationID, Registration.grade, Registration.profession, 
+                Registration.examMothed, Registration.examLength, Registration.examTime, Registration.TiKuorZiNi, 
+                Registration.coverage, Registration.expectTime, Registration.expectScore, Registration.examPercent, 
+                Registration.professionAudit, Registration.collegeAudit, Registration.departmentChargeAudit, Registration.state, 
+                Paper.ID, Paper.paper_AorB, Paper.paper_state, Paper.paper_num, Paper.whitePaper_num, Paper.paper_copyNum, 
+                Paper.print_type, Paper.paper_uintPrice, Paper.whitePaper_unitPrice, Paper.copy_fee, Paper.binding_fee, Paper.flag, 
+                Paper.readed, Registration.stuNum, dbo.TeacherInReg(Course.course_no) AS teacher, 
+                dbo.ClassInReg(Course.course_no) AS class
+FROM      Course INNER JOIN
+                Registration ON Course.ID = Registration.courseID INNER JOIN
+                Paper ON Course.ID = Paper.courseID
+WHERE   (Registration.ID LIKE @ID) AND (Paper.flag LIKE '%考试%')</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID" ColumnName="ID" DataSourceName="PaperDB.dbo.Registration" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="RegistrationID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RegistrationDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="RegistrationDS" msprop:Generator_UserDSName="RegistrationDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CourseReg" msprop:Generator_TableClassName="CourseRegDataTable" msprop:Generator_TableVarName="tableCourseReg" msprop:Generator_TablePropName="CourseReg" msprop:Generator_RowDeletingName="CourseRegRowDeleting" msprop:Generator_RowChangingName="CourseRegRowChanging" msprop:Generator_RowEvHandlerName="CourseRegRowChangeEventHandler" msprop:Generator_RowDeletedName="CourseRegRowDeleted" msprop:Generator_UserTableName="CourseReg" msprop:Generator_RowChangedName="CourseRegRowChanged" msprop:Generator_RowEvArgName="CourseRegRowChangeEvent" msprop:Generator_RowClassName="CourseRegRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="course_no" msprop:Generator_ColumnVarNameInTable="columncourse_no" msprop:Generator_ColumnPropNameInRow="course_no" msprop:Generator_ColumnPropNameInTable="course_noColumn" msprop:Generator_UserColumnName="course_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="teachingPlan" msprop:Generator_ColumnVarNameInTable="columnteachingPlan" msprop:Generator_ColumnPropNameInRow="teachingPlan" msprop:Generator_ColumnPropNameInTable="teachingPlanColumn" msprop:Generator_UserColumnName="teachingPlan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="course_dept" msprop:Generator_ColumnVarNameInTable="columncourse_dept" msprop:Generator_ColumnPropNameInRow="course_dept" msprop:Generator_ColumnPropNameInTable="course_deptColumn" msprop:Generator_UserColumnName="course_dept" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="course_name" msprop:Generator_ColumnVarNameInTable="columncourse_name" msprop:Generator_ColumnPropNameInRow="course_name" msprop:Generator_ColumnPropNameInTable="course_nameColumn" msprop:Generator_UserColumnName="course_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="course_attribute" msprop:Generator_ColumnVarNameInTable="columncourse_attribute" msprop:Generator_ColumnPropNameInRow="course_attribute" msprop:Generator_ColumnPropNameInTable="course_attributeColumn" msprop:Generator_UserColumnName="course_attribute" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegistrationID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnRegistrationID" msprop:Generator_ColumnPropNameInRow="RegistrationID" msprop:Generator_ColumnPropNameInTable="RegistrationIDColumn" msprop:Generator_UserColumnName="RegistrationID" type="xs:int" />
+              <xs:element name="grade" msprop:Generator_ColumnVarNameInTable="columngrade" msprop:Generator_ColumnPropNameInRow="grade" msprop:Generator_ColumnPropNameInTable="gradeColumn" msprop:Generator_UserColumnName="grade" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="profession" msprop:Generator_ColumnVarNameInTable="columnprofession" msprop:Generator_ColumnPropNameInRow="profession" msprop:Generator_ColumnPropNameInTable="professionColumn" msprop:Generator_UserColumnName="profession" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="examMothed" msprop:Generator_ColumnVarNameInTable="columnexamMothed" msprop:Generator_ColumnPropNameInRow="examMothed" msprop:Generator_ColumnPropNameInTable="examMothedColumn" msprop:Generator_UserColumnName="examMothed" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="examLength" msprop:Generator_ColumnVarNameInTable="columnexamLength" msprop:Generator_ColumnPropNameInRow="examLength" msprop:Generator_ColumnPropNameInTable="examLengthColumn" msprop:Generator_UserColumnName="examLength" type="xs:int" minOccurs="0" />
+              <xs:element name="examTime" msprop:Generator_ColumnVarNameInTable="columnexamTime" msprop:Generator_ColumnPropNameInRow="examTime" msprop:Generator_ColumnPropNameInTable="examTimeColumn" msprop:Generator_UserColumnName="examTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TiKuorZiNi" msprop:Generator_ColumnVarNameInTable="columnTiKuorZiNi" msprop:Generator_ColumnPropNameInRow="TiKuorZiNi" msprop:Generator_ColumnPropNameInTable="TiKuorZiNiColumn" msprop:Generator_UserColumnName="TiKuorZiNi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="coverage" msprop:Generator_ColumnVarNameInTable="columncoverage" msprop:Generator_ColumnPropNameInRow="coverage" msprop:Generator_ColumnPropNameInTable="coverageColumn" msprop:Generator_UserColumnName="coverage" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="expectTime" msprop:Generator_ColumnVarNameInTable="columnexpectTime" msprop:Generator_ColumnPropNameInRow="expectTime" msprop:Generator_ColumnPropNameInTable="expectTimeColumn" msprop:Generator_UserColumnName="expectTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="expectScore" msprop:Generator_ColumnVarNameInTable="columnexpectScore" msprop:Generator_ColumnPropNameInRow="expectScore" msprop:Generator_ColumnPropNameInTable="expectScoreColumn" msprop:Generator_UserColumnName="expectScore" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="examPercent" msprop:Generator_ColumnVarNameInTable="columnexamPercent" msprop:Generator_ColumnPropNameInRow="examPercent" msprop:Generator_ColumnPropNameInTable="examPercentColumn" msprop:Generator_UserColumnName="examPercent" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="professionAudit" msprop:Generator_ColumnVarNameInTable="columnprofessionAudit" msprop:Generator_ColumnPropNameInRow="professionAudit" msprop:Generator_ColumnPropNameInTable="professionAuditColumn" msprop:Generator_UserColumnName="professionAudit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="collegeAudit" msprop:Generator_ColumnVarNameInTable="columncollegeAudit" msprop:Generator_ColumnPropNameInRow="collegeAudit" msprop:Generator_ColumnPropNameInTable="collegeAuditColumn" msprop:Generator_UserColumnName="collegeAudit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="departmentChargeAudit" msprop:Generator_ColumnVarNameInTable="columndepartmentChargeAudit" msprop:Generator_ColumnPropNameInRow="departmentChargeAudit" msprop:Generator_ColumnPropNameInTable="departmentChargeAuditColumn" msprop:Generator_UserColumnName="departmentChargeAudit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="state" msprop:Generator_ColumnVarNameInTable="columnstate" msprop:Generator_ColumnPropNameInRow="state" msprop:Generator_ColumnPropNameInTable="stateColumn" msprop:Generator_UserColumnName="state" type="xs:int" minOccurs="0" />
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="paper_AorB" msprop:Generator_ColumnVarNameInTable="columnpaper_AorB" msprop:Generator_ColumnPropNameInRow="paper_AorB" msprop:Generator_ColumnPropNameInTable="paper_AorBColumn" msprop:Generator_UserColumnName="paper_AorB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="paper_state" msprop:Generator_ColumnVarNameInTable="columnpaper_state" msprop:Generator_ColumnPropNameInRow="paper_state" msprop:Generator_ColumnPropNameInTable="paper_stateColumn" msprop:Generator_UserColumnName="paper_state" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="paper_num" msprop:Generator_ColumnVarNameInTable="columnpaper_num" msprop:Generator_ColumnPropNameInRow="paper_num" msprop:Generator_ColumnPropNameInTable="paper_numColumn" msprop:Generator_UserColumnName="paper_num" type="xs:int" minOccurs="0" />
+              <xs:element name="whitePaper_num" msprop:Generator_ColumnVarNameInTable="columnwhitePaper_num" msprop:Generator_ColumnPropNameInRow="whitePaper_num" msprop:Generator_ColumnPropNameInTable="whitePaper_numColumn" msprop:Generator_UserColumnName="whitePaper_num" type="xs:int" minOccurs="0" />
+              <xs:element name="paper_copyNum" msprop:Generator_ColumnVarNameInTable="columnpaper_copyNum" msprop:Generator_ColumnPropNameInRow="paper_copyNum" msprop:Generator_ColumnPropNameInTable="paper_copyNumColumn" msprop:Generator_UserColumnName="paper_copyNum" type="xs:int" minOccurs="0" />
+              <xs:element name="print_type" msprop:Generator_ColumnVarNameInTable="columnprint_type" msprop:Generator_ColumnPropNameInRow="print_type" msprop:Generator_ColumnPropNameInTable="print_typeColumn" msprop:Generator_UserColumnName="print_type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="paper_uintPrice" msprop:Generator_ColumnVarNameInTable="columnpaper_uintPrice" msprop:Generator_ColumnPropNameInRow="paper_uintPrice" msprop:Generator_ColumnPropNameInTable="paper_uintPriceColumn" msprop:Generator_UserColumnName="paper_uintPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="whitePaper_unitPrice" msprop:Generator_ColumnVarNameInTable="columnwhitePaper_unitPrice" msprop:Generator_ColumnPropNameInRow="whitePaper_unitPrice" msprop:Generator_ColumnPropNameInTable="whitePaper_unitPriceColumn" msprop:Generator_UserColumnName="whitePaper_unitPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="copy_fee" msprop:Generator_ColumnVarNameInTable="columncopy_fee" msprop:Generator_ColumnPropNameInRow="copy_fee" msprop:Generator_ColumnPropNameInTable="copy_feeColumn" msprop:Generator_UserColumnName="copy_fee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="binding_fee" msprop:Generator_ColumnVarNameInTable="columnbinding_fee" msprop:Generator_ColumnPropNameInRow="binding_fee" msprop:Generator_ColumnPropNameInTable="binding_feeColumn" msprop:Generator_UserColumnName="binding_fee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="flag" msprop:Generator_ColumnVarNameInTable="columnflag" msprop:Generator_ColumnPropNameInRow="flag" msprop:Generator_ColumnPropNameInTable="flagColumn" msprop:Generator_UserColumnName="flag" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="readed" msprop:Generator_ColumnVarNameInTable="columnreaded" msprop:Generator_ColumnPropNameInRow="readed" msprop:Generator_ColumnPropNameInTable="readedColumn" msprop:Generator_UserColumnName="readed" type="xs:int" minOccurs="0" />
+              <xs:element name="stuNum" msprop:Generator_ColumnVarNameInTable="columnstuNum" msprop:Generator_ColumnPropNameInRow="stuNum" msprop:Generator_ColumnPropNameInTable="stuNumColumn" msprop:Generator_UserColumnName="stuNum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="class" msprop:Generator_ColumnVarNameInTable="columnclass" msprop:Generator_ColumnPropNameInRow="_class" msprop:Generator_ColumnPropNameInTable="classColumn" msprop:Generator_UserColumnName="class" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="teacher" msprop:Generator_ColumnVarNameInTable="columnteacher" msprop:Generator_ColumnPropNameInRow="teacher" msprop:Generator_ColumnPropNameInTable="teacherColumn" msprop:Generator_UserColumnName="teacher" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_UserColumnName="type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

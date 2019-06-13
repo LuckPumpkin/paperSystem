@@ -1,0 +1,7 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dxe" Namespace="DevExpress.Web.ASPxEditors" Assembly="DevExpress.Web.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dxe:ASPxListBox runat="server" SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css" CssPostfix="Aqua" CssFilePath="~/App_Themes/Aqua/{0}/styles.css" LoadingPanelImagePosition="Top">
+    <LoadingPanelImage Url="~/App_Themes/Aqua/Editors/Loading.gif"></LoadingPanelImage>
+</dxe:ASPxListBox>
+

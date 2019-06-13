@@ -1,0 +1,476 @@
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASPxHtmlEditorStringId.Alt_ConstrainProportions">
+    <value>Constrain Proportions On</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.Alt_ConstrainProportionsOff">
+    <value>Constrain Proportions Off</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.DesignViewTab">
+    <value>Design</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.HtmlViewTab">
+    <value>HTML</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.PreviewTab">
+    <value>Preview</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandCut">
+    <value>Cut</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandCopy">
+    <value>Copy</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandPaste">
+    <value>Paste</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandPasteRtf">
+    <value>Paste from Word</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandUndo">
+    <value>Undo</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandRedo">
+    <value>Redo</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandPrint">
+    <value>Print</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandRemoveFormat">
+    <value>Remove Format</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandSubscript">
+    <value>Subscript</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandSuperscript">
+    <value>Superscript</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandOrderedList">
+    <value>Ordered List</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandBulletList">
+    <value>Bullet List</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandIndent">
+    <value>Indent</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandOutdent">
+    <value>Outdent</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandUnlink">
+    <value>Remove Link</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandCheckSpelling">
+    <value>Check Spelling</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandBold">
+    <value>Bold</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandItalic">
+    <value>Italic</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandUnderline">
+    <value>Underline</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandStrikethrough">
+    <value>Strikethrough</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandLeft">
+    <value>Align Left</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandCenter">
+    <value>Align Center</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandRight">
+    <value>Align Right</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandJustify">
+    <value>Justify</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandBackColor">
+    <value>Back Color</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandForeColor">
+    <value>Fore Color</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandApplyCss">
+    <value>Apply CSS</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.CommandFullscreen">
+    <value>Full Screen</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertImage">
+    <value>Insert Image</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ChangeImage">
+    <value>Change Image</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ContextMenu_ChangeImage">
+    <value>Change Image...</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SelectImage">
+    <value>Select Image</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertLink">
+    <value>Insert Link</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ChangeLink">
+    <value>Change Link</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ContextMenu_ChangeLink">
+    <value>Change Link...</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SelectDocument">
+    <value>Select Document</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.FontSize">
+    <value>Font Size</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.FontName">
+    <value>Font Name</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.Paragraph">
+    <value>Paragraph</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.PasteRtf_Instructions">
+    <value>Please paste inside the following box and hit OK.</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.PasteRtf_StripFont">
+    <value>Strip font family</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ButtonOk">
+    <value>OK</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ButtonCancel">
+    <value>Cancel</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ButtonChange">
+    <value>Change</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ButtonInsert">
+    <value>Insert</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ButtonSelect">
+    <value>Select</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertLink_Url">
+    <value>URL</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertLink_Email">
+    <value>E-mail address</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertLink_DisplayProperties">
+    <value>Display Properties</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertLink_Text">
+    <value>Text</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertLink_ToolTip">
+    <value>ToolTip</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertLink_OpenInNewWindow">
+    <value>Open in new window</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertLink_EmailTo">
+    <value>E-mail to</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertLink_Subject">
+    <value>Subject</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertLink_SelectDocument">
+    <value>Invoke a dialog allowing you to select a document</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.DefaultErrorText">
+    <value>The HTML content is invalid</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.RequiredHtmlContentError">
+    <value>The content of the editor cannot be empty</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.RequiredFieldError">
+    <value>This field is required</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertImage_FromWeb">
+    <value>From the web (URL)</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertImage_FromLocal">
+    <value>From your computer</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertImage_EnterUrl">
+    <value>Enter image web address</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertImage_SaveToServer">
+    <value>Save file to server</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertImage_Preview">
+    <value>Image preview</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertImage_UploadInstructions">
+    <value>Browse your computer for the image file to upload</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertImage_MoreOptions">
+    <value>More options</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertImage_UseFloat">
+    <value>Wrap text around image</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertImage_SelectImage">
+    <value>Invoke a dialog allowing you to select an image</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_Size">
+    <value>Size</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_OriginalSize">
+    <value>Original image size</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_CustomSize">
+    <value>Custom size</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_Width">
+    <value>Width</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_Pixels">
+    <value>pixels</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_Height">
+    <value>Height</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_CreateThumbnail">
+    <value>Create thumbnail</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_NewImageName">
+    <value>New image name</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_Position">
+    <value>Position</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_PositionLeft">
+    <value>Left-aligned</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_PositionCenter">
+    <value>Center</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_PositionRight">
+    <value>Right-aligned</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ImageProps_Description">
+    <value>Description</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InvalidUrlErrorText">
+    <value>Invalid URL format, or a file cannot be found using this URL</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable">
+    <value>Insert Table...</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.TableProperties">
+    <value>Table Properties...</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ContextMenu_TableProperties">
+    <value>Table Properties...</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.TableCellProperties">
+    <value>Cell Properties...</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ContextMenu_TableCellProperties">
+    <value>Cell Properties...</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.TableColumnProperties">
+    <value>Column Properties...</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ContextMenu_TableColumnProperties">
+    <value>Column Properties...</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.TableRowProperties">
+    <value>Row Properties...</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ContextMenu_TableRowProperties">
+    <value>Row Properties...</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.ChangeTableColumn_Size">
+    <value>Size</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTableRowAbove">
+    <value>Insert Row Above</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTableRowBelow">
+    <value>Insert Row Below</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTableColumnToLeft">
+    <value>Insert Column to the Left</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTableColumnToRight">
+    <value>Insert Column to the Right</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.DeleteTable">
+    <value>Delete Table</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.DeleteTableRow">
+    <value>Delete Row</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.DeleteTableColumn">
+    <value>Delete Column</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.MergeTableCellDown">
+    <value>Merge Down</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.MergeTableCellHorizontal">
+    <value>Merge Right</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SplitTableCellVertical">
+    <value>Split Vertically</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SplitTableCellHorizontal">
+    <value>Split Horizontally</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Size">
+    <value>Table Size</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Columns">
+    <value>Columns</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Rows">
+    <value>Rows</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Width">
+    <value>Width</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Height">
+    <value>Height</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_FullWidth">
+    <value>Full width</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_AutoFitToContent">
+    <value>AutoFit to contents</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Custom">
+    <value>Custom</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_EqualColumnWidths">
+    <value>Equal column widths</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Layout">
+    <value>Layout</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_CellPaddings">
+    <value>Cell padding</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Alignment">
+    <value>Alignment</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_VertAlignment">
+    <value>Vertical</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_HorzAlignment">
+    <value>Horizontal</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_None">
+    <value>None</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Alignment_Left">
+    <value>Left</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Alignment_Center">
+    <value>Center</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Alignment_Right">
+    <value>Right</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_VAlignment_Top">
+    <value>Top</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_VAlignment_Bottom">
+    <value>Bottom</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_VAlignment_Middle">
+    <value>Middle</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_CellSpacing">
+    <value>Cell spacing</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Appearance">
+    <value>Appearance</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_BorderColor">
+    <value>Border color</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_BorderSize">
+    <value>Border size</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_BgColor">
+    <value>Background color</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Accessibility">
+    <value>Accessibility</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Headers">
+    <value>Headers</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_FirstRow">
+    <value>First Row</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_FirstColumn">
+    <value>First Column</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Both">
+    <value>Both</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Caption">
+    <value>Caption</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_Summary">
+    <value>Summary</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.InsertTable_ApplyToAllCell">
+    <value>Apply to all cells in the table</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SelectAll">
+    <value>Select All</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SaveAsRtf">
+    <value>Rich Text (.rtf)</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SaveAsDocx">
+    <value>Office Open XML (.docx)</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SaveAsMht">
+    <value>MIME HTML (.mht)</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SaveAsOdt">
+    <value>Open Document (.odt)</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SaveAsPdf">
+    <value>Portable Document (.pdf)</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SaveAsTxt">
+    <value>Plain Text (.txt)</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SaveAsRtf_ToolTip">
+    <value>Export to RTF file and save it to a local disk</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SaveAsDocx_ToolTip">
+    <value>Export to DOCX file and save it to a local disk</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SaveAsMht_ToolTip">
+    <value>Export to MHT file and save it to a local disk</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SaveAsOdt_ToolTip">
+    <value>Export to ODT file and save it to a local disk</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SaveAsPdf_ToolTip">
+    <value>Export to PDF file and save it to a local disk</value>
+  </data>
+  <data name="ASPxHtmlEditorStringId.SaveAsTxt_ToolTip">
+    <value>Export to TXT file and save it to a local disk</value>
+  </data>
+</root>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="~/Content.aspx" title="华北理工大学试卷管理系统" roles="*">
+    <siteMapNode title="个人信息维护" roles="*">
+      <siteMapNode url="~/WebForms/Common/Photoupload.aspx" title="修改个人信息" roles="*"/>
+      <siteMapNode url="~/WebForms/Common/ChangePassword.aspx" title="修改登录密码" roles="*"/>
+    </siteMapNode>
+    <siteMapNode title="用户、角色管理" roles="系统管理员">
+      <siteMapNode url="~/WebForms/Admin/RolesMng.aspx" title="角色管理" roles="系统管理员"/>
+      <siteMapNode url="~/WebForms/Admin/AdminMng.aspx" title="登录账户管理" roles="系统管理员"/>
+      <siteMapNode url="~/WebForms/Admin/BranchMng.aspx" title="部门管理" roles="系统管理员"/>
+      <siteMapNode url="~/WebForms/Admin/ImportStudent.aspx" title="导入教师" roles="系统管理员"/>
+      <siteMapNode url="~/WebForms/Admin/TeacherAddMng.aspx" title="教师补充管理" roles="系统管理员"/>
+      <siteMapNode url="~/WebForms/Admin/TeacherMng.aspx" title="教师管理" roles="系统管理员"/>
+    </siteMapNode>
+   
+    <siteMapNode title="课程基础数据管理" roles="系统管理员">
+      <siteMapNode url="~/WebForms/Admin/ImportTable.aspx" title="导入课程表" roles="系统管理员"/>
+    </siteMapNode>
+    <siteMapNode title="价格管理" roles="系统管理员">
+      <siteMapNode url="~/WebForms/Admin/Paramter.aspx" title="参数修改" roles="系统管理员"/>
+    </siteMapNode>
+    
+    <siteMapNode url="~/WebForms/SchoolAdmin/Progress.aspx" title="考试基础数据管理" roles="校级管理员">
+      <siteMapNode url="~/WebForms/SchoolAdmin/ExcludeCourseWithType.aspx" title="类别排查" roles="校级管理员"/>
+      <siteMapNode url="~/WebForms/SchoolAdmin/ExcludeCourseWithTable.aspx" title="表排查" roles="校级管理员"/>
+      <siteMapNode url="~/WebForms/SchoolAdmin/ExcludeCourseWithSelect.aspx" title="查询排查" roles="校级管理员"/>
+      <siteMapNode url="~/WebForms/SchoolAdmin/CommonPrivateMng.aspx" title="生成考试课程表" roles="校级管理员"/>
+      <siteMapNode url="~/WebForms/SchoolAdmin/AssignTask.aspx" title="任务分配管理" roles="校级管理员"/>
+    </siteMapNode>
+    <siteMapNode title="校级试卷数据管理" roles="校级管理员">
+      <siteMapNode url="~/WebForms/SchoolAdmin/CourseMng.aspx" title="课程管理" roles="校级管理员"/>
+      <siteMapNode url="~/WebForms/SchoolAdmin/SSignMng.aspx" title="院级签名管理" roles="校级管理员"/>
+      <siteMapNode url="~/WebForms/SchoolAdmin/SResitMng.aspx" title="补考管理" roles="校级管理员"/>
+      <siteMapNode url="~/WebForms/SchoolAdmin/RegView.aspx" title="登记表查看" roles="校级管理员"/>
+      <siteMapNode url="~/WebForms/SchoolAdmin/AnaView.aspx" title="分析表查看" roles="校级管理员"/>
+      <!--<siteMapNode url="~/WebForms/SchoolAdmin/DetailView.aspx" title="双向细目表查看" roles="校级管理员"/>-->
+    </siteMapNode>
+    <siteMapNode url="~/WebForms/SchoolAdmin/OtherPrint.aspx" title="其他打印管理" roles="校级管理员"/>
+    <siteMapNode title="校级账单" roles="校级管理员">
+      <siteMapNode url="~/WebForms/SchoolAdmin/Bill.aspx" title="试卷账单" roles="校级管理员"/>
+      <siteMapNode url="~/WebForms/SchoolAdmin/OtherBill.aspx" title="其他账单" roles="校级管理员"/>
+    </siteMapNode>
+    <siteMapNode title="系基础数据" roles="系级管理员">
+      <siteMapNode url="~/WebForms/ProfessionAdmin/RegTeacherAssign.aspx" title="试卷及出卷人安排" roles="系级管理员"/>
+      <siteMapNode url="~/WebForms/ProfessionAdmin/AnaTeacherAssign.aspx" title="分析人安排" roles="系级管理员"/>
+    </siteMapNode>
+    <siteMapNode title="系审核" roles="系级管理员">
+      <siteMapNode url="~/WebForms/ProfessionAdmin/PaperAudit.aspx" title="试卷登记审核" roles="系级管理员"/>
+      <siteMapNode url="~/WebForms/ProfessionAdmin/AnalysisAudit.aspx" title="试卷分析审核" roles="系级管理员"/>
+    </siteMapNode>
+    <siteMapNode title="学院用户、角色管理" roles="院级管理员">
+      <siteMapNode url="~/WebForms/CollegeAdmin/BranchMng.aspx" title="学院专业查看" roles="院级管理员"/>
+      <siteMapNode url="~/WebForms/CollegeAdmin/ProfessionMng.aspx" title="学院用户管理" roles="院级管理员"/>
+      <siteMapNode url="~/WebForms/CollegeAdmin/ProfessionAdminMng.aspx" title="学院系管理员管理" roles="院级管理员"/>
+    </siteMapNode>
+    <siteMapNode title="学院基础数据管理" roles="院级管理员">
+      <siteMapNode url="~/WebForms/CollegeAdmin/CourseMng.aspx" title="学院课程管理" roles="院级管理员"/>
+      <siteMapNode url="~/WebForms/CollegeAdmin/CSignMng.aspx" title="系级签名管理" roles="院级管理员"/>
+    </siteMapNode>
+    <siteMapNode title="登记、分析管理" roles="教师">
+      <siteMapNode url="~/WebForms/Teacher/PaperMng.aspx" title="登记管理" roles="教师"/>
+      <siteMapNode url="~/WebForms/Teacher/AnalysisMng.aspx" title="分析管理" roles="教师"/>
+      <siteMapNode url="~/WebForms/Teacher/ResitMng.aspx" title="补考管理" roles="教师"/>
+    </siteMapNode>
+    <siteMapNode url="~/WebForms/Teacher/AllView.aspx" title="登记表、分析表打印" roles="教师">
+    </siteMapNode>
+    <siteMapNode title="学院审核管理" roles="院级管理员">
+      <siteMapNode url="~/WebForms/CollegeAdmin/PaperAudit.aspx" title="学院试卷登记审核" roles="院级管理员"/>
+      <!--<siteMapNode url="~/WebForms/CollegeAdmin/ReView.aspx" title="试卷查看" roles="院级管理员"/>-->
+    </siteMapNode>
+    <siteMapNode title="报表查看" roles="院级管理员">
+      <siteMapNode url="~/WebForms/CollegeAdmin/RegAudit.aspx" title="登记表查看" roles="院级管理员"/>
+      <siteMapNode url="~/WebForms/CollegeAdmin/AnalysisAudit.aspx" title="分析表查看" roles="院级管理员"/>
+    </siteMapNode>
+    <siteMapNode url="~/WebForms/CollegeAdmin/OtherPrint.aspx" title="其他打印管理" roles="院级管理员"/>
+    <siteMapNode title="学院结账" roles="院级管理员">
+      <siteMapNode url="~/WebForms/CollegeAdmin/CollegeBill.aspx" title="试卷账单查看" roles="院级管理员"/>
+      <siteMapNode url="~/WebForms/CollegeAdmin/OtherBill.aspx" title="其他账单查看" roles="院级管理员"/>
+    </siteMapNode>
+    <!--<siteMapNode title="课程属性、考试周安排管理" roles="校级管理员">
+      --><!--<siteMapNode url="~/WebForms/SchoolAdmin/CommonPrivateMng.aspx" title="课程属性管理" roles="校级管理员"/>--><!--
+      <siteMapNode url="~/WebForms/SchoolAdmin/WeekCheck.aspx" title="考试周检查" roles="校级管理员"/>
+      <siteMapNode url="~/WebForms/SchoolAdmin/CourseClassCollegeAttributeView.aspx" title="课程信息查看" roles="校级管理员"/>
+    </siteMapNode>-->
+    <siteMapNode title="试卷打印" roles="打印部">
+      <siteMapNode url="~/WebForms/PrintAdmin/PaperAudit.aspx" title="考试审核" roles="打印部"/>
+      <siteMapNode url="~/WebForms/PrintAdmin/ResitAudit.aspx" title="补考审核" roles="打印部"/>
+      <siteMapNode url="~/WebForms/PrintAdmin/PaperPrint.aspx" title="试卷送印" roles="打印部"/>
+    </siteMapNode>
+    <siteMapNode url="~/WebForms/PrintAdmin/OtherPrint.aspx" title="其他打印" roles="打印部"/>
+    <siteMapNode title="结账" roles="打印部">
+      <siteMapNode url="~/WebForms/PrintAdmin/PrintBill.aspx" title="试卷账单" roles="打印部"/>
+      <siteMapNode url="~/WebForms/PrintAdmin/OtherBill.aspx" title="其他账单" roles="打印部"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

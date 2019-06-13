@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSImportStudents" targetNamespace="http://tempuri.org/DSImportStudents.xsd" xmlns:mstns="http://tempuri.org/DSImportStudents.xsd" xmlns="http://tempuri.org/DSImportStudents.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="AppConnStr" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AppConnStr (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.AppConnStr.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ImportStudentsAdapter" GeneratorDataComponentClassName="ImportStudentsAdapter" Name="ImportStudents" UserDataComponentName="ImportStudentsAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   [User].Account, [User].UserCode, [User].BranchID, [User].Name, [User].Email, [User].IDCard, [User].Mobile, [User].Tel, 
+                [User].Password, [User].PasswordSalt, [User].PasswordFormat, [User].IsLockOut, [User].IsAvailable, [User].IsDelete, 
+                [User].LastLogonTime, [User].UserCreateTime, [User].Sex, UsersInRoles.RoleId, UsersInRoles.Id, 
+                UsersInRoles.UserCode AS UserInRoles_UserCode, Roles.RoleId AS Roles_RoleId, Roles.RoleName, 
+                Branch.BranchID AS Expr1, Branch.BranchName
+FROM      [User] INNER JOIN
+                UsersInRoles ON [User].UserCode = UsersInRoles.UserCode INNER JOIN
+                Roles ON UsersInRoles.RoleId = Roles.RoleId INNER JOIN
+                Branch ON [User].BranchID = Branch.BranchID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BranchID" DataSetColumn="BranchID" />
+              <Mapping SourceColumn="Account" DataSetColumn="Account" />
+              <Mapping SourceColumn="UserCode" DataSetColumn="UserCode" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="IDCard" DataSetColumn="IDCard" />
+              <Mapping SourceColumn="Mobile" DataSetColumn="Mobile" />
+              <Mapping SourceColumn="Tel" DataSetColumn="Tel" />
+              <Mapping SourceColumn="Password" DataSetColumn="Password" />
+              <Mapping SourceColumn="PasswordSalt" DataSetColumn="PasswordSalt" />
+              <Mapping SourceColumn="PasswordFormat" DataSetColumn="PasswordFormat" />
+              <Mapping SourceColumn="IsLockOut" DataSetColumn="IsLockOut" />
+              <Mapping SourceColumn="IsAvailable" DataSetColumn="IsAvailable" />
+              <Mapping SourceColumn="IsDelete" DataSetColumn="IsDelete" />
+              <Mapping SourceColumn="LastLogonTime" DataSetColumn="LastLogonTime" />
+              <Mapping SourceColumn="UserCreateTime" DataSetColumn="UserCreateTime" />
+              <Mapping SourceColumn="Sex" DataSetColumn="Sex" />
+              <Mapping SourceColumn="RoleId" DataSetColumn="RoleId" />
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="RoleName" DataSetColumn="RoleName" />
+              <Mapping SourceColumn="UserInRoles_UserCode" DataSetColumn="UserInRoles_UserCode" />
+              <Mapping SourceColumn="Roles_RoleId" DataSetColumn="Roles_RoleId" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="BranchName" DataSetColumn="BranchName" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="AddUser" Modifier="Public" Name="AddUser" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="AddUser">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO [User]
+                (UserCode, Account, Name, Password, IsLockOut, IsAvailable, IsDelete, UserCreateTime, Sex, BranchID)
+VALUES   (@UserCode,@Account,@Name,@Password,@IsLockOut,@IsAvailable,@IsDelete,@UserCreateTime,@Sex,@BranchID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="UserCode" ColumnName="UserCode" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="nvarchar(40)" DbType="String" Direction="Input" ParameterName="@UserCode" Precision="0" ProviderType="NVarChar" Scale="0" Size="40" SourceColumn="UserCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Account" ColumnName="Account" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="nvarchar(40)" DbType="String" Direction="Input" ParameterName="@Account" Precision="0" ProviderType="NVarChar" Scale="0" Size="40" SourceColumn="Account" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Name" ColumnName="Name" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Password" ColumnName="Password" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="nvarchar(30)" DbType="String" Direction="Input" ParameterName="@Password" Precision="0" ProviderType="NVarChar" Scale="0" Size="30" SourceColumn="Password" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="IsLockOut" ColumnName="IsLockOut" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@IsLockOut" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="IsLockOut" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="IsAvailable" ColumnName="IsAvailable" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@IsAvailable" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="IsAvailable" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="IsDelete" ColumnName="IsDelete" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@IsDelete" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="IsDelete" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="UserCreateTime" ColumnName="UserCreateTime" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@UserCreateTime" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="UserCreateTime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Sex" ColumnName="Sex" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="nvarchar(2)" DbType="String" Direction="Input" ParameterName="@Sex" Precision="0" ProviderType="NVarChar" Scale="0" Size="2" SourceColumn="Sex" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="BranchID" ColumnName="BranchID" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@BranchID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="BranchID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="AddUserInRoles" Modifier="Public" Name="AddUserInRoles" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="AddUserInRoles">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO UsersInRoles(RoleId, UserCode) VALUES (@RoleId, @UserCode)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="RoleId" ColumnName="RoleId" DataSourceName="InnovationTrainingProgramDB.dbo.UsersInRoles" DataTypeServer="nvarchar(40)" DbType="String" Direction="Input" ParameterName="@RoleId" Precision="0" ProviderType="NVarChar" Scale="0" Size="40" SourceColumn="RoleId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="UserCode" ColumnName="UserCode" DataSourceName="InnovationTrainingProgramDB.dbo.UsersInRoles" DataTypeServer="nvarchar(40)" DbType="String" Direction="Input" ParameterName="@UserCode" Precision="0" ProviderType="NVarChar" Scale="0" Size="40" SourceColumn="UserCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="InnovationTrainingProgramDB.dbo.Branch" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="GetBranchIDbyBranchName" Modifier="Public" Name="GetBranchIDbyBranchName" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="GetBranchIDbyBranchName">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   BranchID
+FROM      Branch
+WHERE   (BranchName = @BranchName)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="BranchName" ColumnName="BranchName" DataSourceName="InnovationTrainingProgramDB.dbo.Branch" DataTypeServer="nvarchar(40)" DbType="String" Direction="Input" ParameterName="@BranchName" Precision="0" ProviderType="NVarChar" Scale="0" Size="40" SourceColumn="BranchName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="InnovationTrainingProgramDB.dbo.Roles" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="GetRoleIdByRoleName" Modifier="Public" Name="GetRoleIdByRoleName" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="GetRoleIdByRoleName">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT RoleId FROM Roles WHERE (RoleName = @RoleName)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="RoleName" ColumnName="RoleName" DataSourceName="InnovationTrainingProgramDB.dbo.Roles" DataTypeServer="nvarchar(30)" DbType="String" Direction="Input" ParameterName="@RoleName" Precision="0" ProviderType="NVarChar" Scale="0" Size="30" SourceColumn="RoleName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="InnovationTrainingProgramDB.dbo.[User]" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="GetUserIDBySno" Modifier="Public" Name="GetUserIDBySno" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="GetUserIDBySno">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT UserCode FROM [User] where Account = @Account</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Account" ColumnName="Account" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="nvarchar(40)" DbType="String" Direction="Input" ParameterName="@Account" Precision="0" ProviderType="NVarChar" Scale="0" Size="40" SourceColumn="Account" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="AppConnStr (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateUserName" Modifier="Public" Name="UpdateUserName" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="UpdateUserName">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE  [User]
+SET         Name = @Name
+WHERE   (UserCode = @UserCode)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Name" ColumnName="Name" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="UserCode" ColumnName="UserCode" DataSourceName="InnovationTrainingProgramDB.dbo.[User]" DataTypeServer="nvarchar(40)" DbType="String" Direction="Input" ParameterName="@UserCode" Precision="0" ProviderType="NVarChar" Scale="0" Size="40" SourceColumn="UserCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSImportStudents" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DSImportStudents" msprop:Generator_UserDSName="DSImportStudents">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ImportStudents" msprop:Generator_TableClassName="ImportStudentsDataTable" msprop:Generator_TableVarName="tableImportStudents" msprop:Generator_RowChangedName="ImportStudentsRowChanged" msprop:Generator_TablePropName="ImportStudents" msprop:Generator_RowDeletingName="ImportStudentsRowDeleting" msprop:Generator_RowChangingName="ImportStudentsRowChanging" msprop:Generator_RowEvHandlerName="ImportStudentsRowChangeEventHandler" msprop:Generator_RowDeletedName="ImportStudentsRowDeleted" msprop:Generator_RowClassName="ImportStudentsRow" msprop:Generator_UserTableName="ImportStudents" msprop:Generator_RowEvArgName="ImportStudentsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BranchID" msprop:Generator_ColumnVarNameInTable="columnBranchID" msprop:Generator_ColumnPropNameInRow="BranchID" msprop:Generator_ColumnPropNameInTable="BranchIDColumn" msprop:Generator_UserColumnName="BranchID" type="xs:int" minOccurs="0" />
+              <xs:element name="Account" msprop:Generator_ColumnVarNameInTable="columnAccount" msprop:Generator_ColumnPropNameInRow="Account" msprop:Generator_ColumnPropNameInTable="AccountColumn" msprop:Generator_UserColumnName="Account" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserCode" msprop:Generator_ColumnVarNameInTable="columnUserCode" msprop:Generator_ColumnPropNameInRow="UserCode" msprop:Generator_ColumnPropNameInTable="UserCodeColumn" msprop:Generator_UserColumnName="UserCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IDCard" msprop:Generator_ColumnVarNameInTable="columnIDCard" msprop:Generator_ColumnPropNameInRow="IDCard" msprop:Generator_ColumnPropNameInTable="IDCardColumn" msprop:Generator_UserColumnName="IDCard" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mobile" msprop:Generator_ColumnVarNameInTable="columnMobile" msprop:Generator_ColumnPropNameInRow="Mobile" msprop:Generator_ColumnPropNameInTable="MobileColumn" msprop:Generator_UserColumnName="Mobile" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tel" msprop:Generator_ColumnVarNameInTable="columnTel" msprop:Generator_ColumnPropNameInRow="Tel" msprop:Generator_ColumnPropNameInTable="TelColumn" msprop:Generator_UserColumnName="Tel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnPropNameInTable="PasswordColumn" msprop:Generator_UserColumnName="Password" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PasswordSalt" msprop:Generator_ColumnVarNameInTable="columnPasswordSalt" msprop:Generator_ColumnPropNameInRow="PasswordSalt" msprop:Generator_ColumnPropNameInTable="PasswordSaltColumn" msprop:Generator_UserColumnName="PasswordSalt" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PasswordFormat" msprop:Generator_ColumnVarNameInTable="columnPasswordFormat" msprop:Generator_ColumnPropNameInRow="PasswordFormat" msprop:Generator_ColumnPropNameInTable="PasswordFormatColumn" msprop:Generator_UserColumnName="PasswordFormat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsLockOut" msprop:Generator_ColumnVarNameInTable="columnIsLockOut" msprop:Generator_ColumnPropNameInRow="IsLockOut" msprop:Generator_ColumnPropNameInTable="IsLockOutColumn" msprop:Generator_UserColumnName="IsLockOut" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsAvailable" msprop:Generator_ColumnVarNameInTable="columnIsAvailable" msprop:Generator_ColumnPropNameInRow="IsAvailable" msprop:Generator_ColumnPropNameInTable="IsAvailableColumn" msprop:Generator_UserColumnName="IsAvailable" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsDelete" msprop:Generator_ColumnVarNameInTable="columnIsDelete" msprop:Generator_ColumnPropNameInRow="IsDelete" msprop:Generator_ColumnPropNameInTable="IsDeleteColumn" msprop:Generator_UserColumnName="IsDelete" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LastLogonTime" msprop:Generator_ColumnVarNameInTable="columnLastLogonTime" msprop:Generator_ColumnPropNameInRow="LastLogonTime" msprop:Generator_ColumnPropNameInTable="LastLogonTimeColumn" msprop:Generator_UserColumnName="LastLogonTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UserCreateTime" msprop:Generator_ColumnVarNameInTable="columnUserCreateTime" msprop:Generator_ColumnPropNameInRow="UserCreateTime" msprop:Generator_ColumnPropNameInTable="UserCreateTimeColumn" msprop:Generator_UserColumnName="UserCreateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Sex" msprop:Generator_ColumnVarNameInTable="columnSex" msprop:Generator_ColumnPropNameInRow="Sex" msprop:Generator_ColumnPropNameInTable="SexColumn" msprop:Generator_UserColumnName="Sex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RoleId" msprop:Generator_ColumnVarNameInTable="columnRoleId" msprop:Generator_ColumnPropNameInRow="RoleId" msprop:Generator_ColumnPropNameInTable="RoleIdColumn" msprop:Generator_UserColumnName="RoleId">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="RoleName" msprop:Generator_ColumnVarNameInTable="columnRoleName" msprop:Generator_ColumnPropNameInRow="RoleName" msprop:Generator_ColumnPropNameInTable="RoleNameColumn" msprop:Generator_UserColumnName="RoleName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserInRoles_UserCode" msprop:Generator_ColumnVarNameInTable="columnUserInRoles_UserCode" msprop:Generator_ColumnPropNameInRow="UserInRoles_UserCode" msprop:Generator_ColumnPropNameInTable="UserInRoles_UserCodeColumn" msprop:Generator_UserColumnName="UserInRoles_UserCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Roles_RoleId" msprop:Generator_ColumnVarNameInTable="columnRoles_RoleId" msprop:Generator_ColumnPropNameInRow="Roles_RoleId" msprop:Generator_ColumnPropNameInTable="Roles_RoleIdColumn" msprop:Generator_UserColumnName="Roles_RoleId">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr1" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" />
+              <xs:element name="BranchName" msprop:Generator_ColumnVarNameInTable="columnBranchName" msprop:Generator_ColumnPropNameInRow="BranchName" msprop:Generator_ColumnPropNameInTable="BranchNameColumn" msprop:Generator_UserColumnName="BranchName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ImportStudents" />
+      <xs:field xpath="mstns:UserCode" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
