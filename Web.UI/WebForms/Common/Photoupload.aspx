@@ -43,6 +43,7 @@
        ④签名仅包含教师姓名；<br />
        ⑤姓名周围减少留白；<br />
        ⑥图片背景尽量为白色，不要有阴影，字迹清晰。</p> 
+          
          <div style="display: inline-grid; margin: 25px;">  签名图片展示：<asp:Image CssClass="imgView" ID="IPersonalCard" AlternateText="" ImageUrl="" runat="server"/></div>
            </div>
         <dx:ASPxButton ID="btnImport" runat="server" OnClick="btnImport_Click" Text="保存"></dx:ASPxButton>

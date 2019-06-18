@@ -20,6 +20,7 @@ using Ionic.Zip;
 using ZipFile = Ionic.Zip.ZipFile;
 public partial class WebForms_CollegeAdmin_Zipupload : System.Web.UI.Page
 {
+    
     protected void Page_Load(object sender, EventArgs e)
     {
        
@@ -33,24 +34,9 @@ public partial class WebForms_CollegeAdmin_Zipupload : System.Web.UI.Page
             lbName.Text = tea.Rows[0]["Name"].ToString();
             lbSex.Text = tea.Rows[0]["Sex"].ToString();
             lbTel.Text = tea.Rows[0]["Tel"].ToString();
-            if (File.Exists(@Server.MapPath("~/SigImage/") + txtAccount.Value + ".png"))
-            {
-                IPersonalCard.ImageUrl = @"../../SigImage/" + txtAccount.Value + ".png";
-            }
-            else
-            {
-                IPersonalCard.ImageUrl = "";
-            }
+            showImage();
         }
-        if (File.Exists(@Server.MapPath("~/SigImage/") + txtAccount.Value + ".png"))
-        {
-            IPersonalCard.ImageUrl = @"../../SigImage/" + txtAccount.Value + ".png";
-        }
-        else
-        {
-            IPersonalCard.ImageUrl = "";
-        }
-       
+        showImage();
     }
 
     protected void btnImport_Click(object sender, EventArgs e)
@@ -73,20 +59,13 @@ public partial class WebForms_CollegeAdmin_Zipupload : System.Web.UI.Page
                     {   //如果不存在就创建
                         Directory.CreateDirectory(wantPath);
                         this.files.SaveAs(Server.MapPath("~/SigImage/") + txtAccount.Value + ".png");
+                        showImage();
                     }
                     else
                     {
 
                         this.files.SaveAs(Server.MapPath("~/SigImage/") + txtAccount.Value + ".png");
-                    }
-   
-                    if (File.Exists(@Server.MapPath("~/SigImage/") + txtAccount.Value + ".png"))
-                    {
-                        IPersonalCard.ImageUrl =@"../../SigImage/" + txtAccount.Value + ".png";
-                    }
-                    else
-                    {
-                        IPersonalCard.ImageUrl = "";
+                        showImage();
                     }
                     te.UpdateTelByAccount(lbTel.Text, txtAccount.Value);
                     MsgBox.ShowMessage("信息更新成功！！");
@@ -131,5 +110,17 @@ public partial class WebForms_CollegeAdmin_Zipupload : System.Web.UI.Page
             //如果文件符合要求，调用SaveAS()方法上传，并显示相关信息
         }
         return filesValid;
+    }
+    public void showImage(){
+
+        Random rand = new Random();
+        if (File.Exists(@Server.MapPath("~/SigImage/") + txtAccount.Value + ".png"))
+        {
+            IPersonalCard.ImageUrl = Server.HtmlEncode(Request.ApplicationPath) + @"SigImage/" + txtAccount.Value + ".png" + "?" + rand.Next(1000).ToString();
+        }
+        else
+        {
+            IPersonalCard.ImageUrl = "";
+        }
     }
 }
