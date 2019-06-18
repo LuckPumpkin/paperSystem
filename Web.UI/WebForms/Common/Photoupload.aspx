@@ -37,12 +37,12 @@
         <p class="p_info">性别：<dx:ASPxLabel ID="lbSex" runat="server"></dx:ASPxLabel></p>
         <p class="p_info">电话：<asp:TextBox ID="lbTel" runat="server"></asp:TextBox><span style="color:red">*</span></p>       
         <p class="p_info">签名图片上传：<asp:FileUpload ID="files" runat="server" /></p>
-      <p class="p_info" style="height:40px;width:580px;background-color:#D1CA9C">①图片为png格式；
-       ②图片命名为本人工号；
-       ③签名仅包含教师姓名；
-       ④姓名周围减少留白；
-          <br />
-       ⑤图片背景尽量为白色，不要有阴影，字迹清晰。</p> 
+      <p class="p_info" style="height:120px;width:270px;background-color:#D1CA9C">①图片为png格式；<br />
+       ②图片命名为本人工号；<br />
+       ③分辨率尽量为200*80；<br />
+       ④签名仅包含教师姓名；<br />
+       ⑤姓名周围减少留白；<br />
+       ⑥图片背景尽量为白色，不要有阴影，字迹清晰。</p> 
          <div style="display: inline-grid; margin: 25px;">  签名图片展示：<asp:Image CssClass="imgView" ID="IPersonalCard" AlternateText="" ImageUrl="" runat="server"/></div>
            </div>
         <dx:ASPxButton ID="btnImport" runat="server" OnClick="btnImport_Click" Text="保存"></dx:ASPxButton>

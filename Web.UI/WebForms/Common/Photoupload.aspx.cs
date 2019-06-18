@@ -35,7 +35,7 @@ public partial class WebForms_CollegeAdmin_Zipupload : System.Web.UI.Page
             lbTel.Text = tea.Rows[0]["Tel"].ToString();
             if (File.Exists(@Server.MapPath("~/SigImage/") + txtAccount.Value + ".png"))
             {
-                IPersonalCard.ImageUrl = "../../SigImage/" + txtAccount.Value + ".png";
+                IPersonalCard.ImageUrl = @"../../SigImage/" + txtAccount.Value + ".png";
             }
             else
             {
@@ -44,7 +44,7 @@ public partial class WebForms_CollegeAdmin_Zipupload : System.Web.UI.Page
         }
         if (File.Exists(@Server.MapPath("~/SigImage/") + txtAccount.Value + ".png"))
         {
-            IPersonalCard.ImageUrl = "../../SigImage/" + txtAccount.Value + ".png";
+            IPersonalCard.ImageUrl = @"../../SigImage/" + txtAccount.Value + ".png";
         }
         else
         {
@@ -79,10 +79,10 @@ public partial class WebForms_CollegeAdmin_Zipupload : System.Web.UI.Page
 
                         this.files.SaveAs(Server.MapPath("~/SigImage/") + txtAccount.Value + ".png");
                     }
-
+   
                     if (File.Exists(@Server.MapPath("~/SigImage/") + txtAccount.Value + ".png"))
                     {
-                        IPersonalCard.ImageUrl = "../../SigImage/" + txtAccount.Value + ".png";
+                        IPersonalCard.ImageUrl =@"../../SigImage/" + txtAccount.Value + ".png";
                     }
                     else
                     {
